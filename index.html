@@ -5,16 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- daisy and tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-bg': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- common style -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope',
+                sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav>
-
+        <nav class=" conatainer mx-auto lg:px-26 lg:my-5">
+            <div class="navbar px-10 lg:px-20  bg-white border-none shadow-none">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 hover:bg-white">
+                            <li><a class="hover:">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class=" flex justify-center items-center">
+                        <div class="flex justify-center items-center lg:hidden">
+                            <img class="pt-1" src="Images/Vector.png" alt="">
+                        </div>
+                        <div>
+                            <h1
+                                class="btn bg-white border-none shadow-none  text-2xl lg:text-4xl font-semibold gap-0  hover:bg-white">
+                                Hockey<span class="text-btn-bg ">’</span>s</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-evenly items-center   w-2/5">
+                    <ul class="menu menu-horizontal px-1  hover:bg-whitecursor-pointer  gap-6 text-xl opacity-70">
+                        <li class=" hover:text-btn-bg ">Home</li>
+                        <li class=" hover:text-btn-bg ">About</li>
+                        <li class=" hover:text-btn-bg ">Pages</li>
+                        <li class=" hover:text-btn-bg ">Blog</li>
+                        <li class=" hover:text-btn-bg ">Contact</li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <div class="hidden lg:flex">
+                        <img src="Images/Frame.png" alt="">
+                    </div>
+                    <button class="btn hover:bg-[#FF4240] text-white text-xl bg-[#FF4240]">Get Ticket</button>
+                </div>
+            </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+
+    </main>
     <footer></footer>
 </body>
 
