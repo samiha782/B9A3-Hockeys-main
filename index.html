@@ -448,31 +448,90 @@
                     and eager to connect with you.
                 </p>
             </div>
-            <!-- grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 py-8 p-6 lg:p-0">
-                <div class="col-span-1 border-2 border-slate-100 rounded-xl bg-white">
-                    <div class="">
-                        <!-- 1 -->
-                        <div class="bg-[#BCED6D1A] p-8 mx-10 my-10 rounded-xl">
-                            <img class="pb-8" src="Images/Group100.png" alt="">
-                            <img src="Images/PhoneNumber.png" alt="">
+            <!-- grids -->
+            <div>
+                <!--map,email grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 py-8 p-6 lg:p-0 gap-4">
+                    <div class="col-span-1 border-2 border-slate-100 rounded-xl bg-white">
+                        <div class="">
+                            <!-- 1 -->
+                            <div class="bg-[#BCED6D1A] p-8 mx-10 my-10 rounded-xl">
+                                <img class="pb-8" src="Images/Group100.png" alt="">
+                                <img src="Images/PhoneNumber.png" alt="">
 
-                        </div>
-                        <!-- 2 -->
-                        <div class="bg-[#FDDD5F1A] p-8 mx-10 my-10 rounded-xl">
-                            <img class="pb-8" src="Images/Group200.png" alt="">
-                            <img src="Images/Email.png" alt="">
+                            </div>
+                            <!-- 2 -->
+                            <div class="bg-[#FDDD5F1A] p-8 mx-10 my-10 rounded-xl">
+                                <img class="pb-8" src="Images/Group200.png" alt="">
+                                <img src="Images/Email.png" alt="">
 
-                        </div>
-                        <!-- 3 -->
-                        <div class="bg-[#BCED6D1A] p-8 mx-10 my-10 rounded-xl">
-                            <img class="pb-8" src="Images/Group300.png" alt="">
-                            <img src="Images/Location.png" alt="">
+                            </div>
+                            <!-- 3 -->
+                            <div class="bg-[#BCED6D1A] p-8 mx-10 my-10 rounded-xl">
+                                <img class="pb-8" src="Images/Group300.png" alt="">
+                                <img src="Images/Location.png" alt="">
 
+                            </div>
                         </div>
                     </div>
+
+                    <!-- form grid -->
+                    <div class="col-span-2  grid grid-cols-1 lg:grid-cols-2">
+
+                        <!-- name -->
+                        <label class="form-control lg:col-span-1 col-span-2">
+                            <div class="label">
+                                <span class="label-text text-xl font-semibold">Your Name</span>
+
+                            </div>
+                            <input type="text" placeholder="Enter your full name"
+                                class="input w-full max-w-xs bg-[#13131808] border-none " />
+
+                        </label>
+                        <!-- Your Email -->
+                        <label class="form-control lg:col-span-1 col-span-2 max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-xl font-semibold">Your Email</span>
+
+                            </div>
+                            <input type="text" placeholder="Enter your email"
+                                class="input  w-full max-w-2xl bg-[#13131808] border-none" />
+
+                        </label>
+                        <!-- subject -->
+                        <label class="form-control w-full max-w-xs lg:col-span-1 col-span-2">
+                            <div class="label">
+                                <span class="label-text text-xl font-semibold">Subject</span>
+
+                            </div>
+                            <input type="text" placeholder="Enter your Subject"
+                                class="input input-bordered w-full max-w-xs bg-[#13131808] border-none" />
+
+                        </label>
+                        <!-- phone -->
+                        <label class="form-control w-full max-w-xs lg:col-span-1 col-span-2">
+                            <div class="label">
+                                <span class="label-text text-xl font-semibold">Phone Number</span>
+
+                            </div>
+                            <input type="text" placeholder="Enter your phone number"
+                                class="input input-bordered w-full border-none max-w-xs bg-[#13131808]" />
+
+                        </label>
+                        <!-- text area -->
+                        <label class="form-control col-span-2 ">
+                            <div class="label ">
+                                <span class="label-text text-xl font-semibold">Massage</span>
+                            </div>
+                            <textarea class="textarea  border-none h-[370px]  bg-[#13131808]"
+                                placeholder=" Write your massage"></textarea>
+                        </label>
+
+                        <!-- btn -->
+                        <button class="btn hover:bg-[#FF4240] text-white text-xl bg-[#FF4240] col-span-2">Send
+                            Message</button>
+                    </div>
                 </div>
-                <div></div>
             </div>
         </section>
     </main>
